@@ -1,0 +1,19 @@
+@import "../globalCSS";
+
+.formGroup {
+  @extend %formGroup;
+}
+
+.formGroup > button {
+  display: block;
+  height: 5vh;
+  background-color: $ternary-color;
+  color: $main-color;
+  border: none;
+  min-width: 20%;
+}
+
+.formGroup > button:hover{
+    background-color: $secondary-color;
+}
+

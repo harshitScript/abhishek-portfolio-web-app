@@ -1,0 +1,30 @@
+@import "../../globalCSS";
+
+.header {
+  color: $secondary-color;
+  text-align: center;
+  font-size: 10vh;
+  font-family: "Blanka", Courier, monospace;
+  text-transform: uppercase;
+  text-decoration: underline;
+  box-sizing: border-box;
+  padding: 1vh;
+}
+
+.header:hover {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bolder;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .header {
+    font-size: 5vh;
+  }
+}
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .header {
+    font-size: 7vh;
+  }
+}

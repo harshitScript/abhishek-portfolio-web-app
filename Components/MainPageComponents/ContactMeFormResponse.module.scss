@@ -1,0 +1,62 @@
+@import "../../globalCSS";
+
+.contactRequestResponseDiv {
+  box-sizing: border-box;
+  padding: 1vh;
+  height: 41vh;
+  @extend %flexBox;
+}
+
+.mainSpan {
+  color: $secondary-color;
+  font-size: 3vh;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+.idSpan {
+  color: $secondary-color;
+  font-size: 2vh;
+  display: block;
+  text-align: center;
+}
+
+.logoImageContainer {
+  @extend %flexBox;
+  box-sizing: border-box;
+  padding: 1vh;
+}
+
+.responseTimeSpan {
+  font-size: small;
+  color: $secondary-color;
+  display: block;
+  text-align: center;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .mainSpan {
+    font-size: 2vh;
+  }
+  .idSpan {
+    font-size: 1.7vh;
+  }
+
+  .responseTimeSpan {
+    font-size: 1.5vh;
+  }
+}
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .mainSpan {
+    font-size: 3vh;
+  }
+  .idSpan {
+    font-size: 2vh;
+  }
+
+  .responseTimeSpan {
+    font-size: 1.7vh;
+  }
+}

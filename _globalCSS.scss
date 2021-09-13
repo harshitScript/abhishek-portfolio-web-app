@@ -1,0 +1,32 @@
+$main-color: black;
+$secondary-color: darkgrey;
+$ternary-color: lightgrey;
+$mobile-max-width: 500px;
+$tablet-max-width: 1024px;
+
+@mixin background-image($url) {
+  background: url($url);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@mixin mainPageBlockHeadingSpan($fontSize) {
+  font-size: $fontSize;
+  color: $secondary-color;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: medium;
+}
+
+%flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%formGroup {
+  box-sizing: border-box;
+  padding: 1vh;
+}

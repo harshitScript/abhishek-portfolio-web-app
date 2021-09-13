@@ -1,0 +1,8 @@
+@import "../../globalCSS";
+
+.portfolioDiv {
+  box-sizing: border-box;
+  padding: 1vh;
+  background-color: cornflowerblue;
+  grid-column: 1/2;
+}

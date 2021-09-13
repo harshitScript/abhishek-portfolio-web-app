@@ -1,0 +1,52 @@
+@import "../../globalCSS";
+
+.contactMeFormDiv {
+  box-sizing: border-box;
+  padding: 1vh;
+}
+
+.contactMeFormDiv > form {
+  box-sizing: border-box;
+  padding: 1vh;
+  height: 41vh;
+  overflow: auto;
+}
+
+.contactMeHeader {
+  @include mainPageBlockHeadingSpan(5vh);
+}
+
+.loadingCircleSpan {
+  color: $main-color;
+}
+.loadingCircleSpan > svg {
+  animation: rotateLoading 300ms ease-out normal infinite;
+}
+
+@keyframes rotateLoading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .contactMeFormDiv {
+    grid-row: 4/5;
+  }
+  .contactMeHeader {
+    @include mainPageBlockHeadingSpan(4vh);
+  }
+}
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .contactMeFormDiv {
+    grid-row: 4/5;
+  }
+  .contactMeHeader {
+    @include mainPageBlockHeadingSpan(5vh);
+  }
+}

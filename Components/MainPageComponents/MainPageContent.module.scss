@@ -1,0 +1,26 @@
+@import "../../globalCSS";
+
+.background {
+  @include background-image("https://wallpaperaccess.com/full/806443.jpg");
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 10vh 50vh 40vh;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: 500px) {
+  .background {
+    grid-template-columns: 100%;
+    grid-template-rows: 8vh 35vh 50vh 50vh 30vh;
+  }
+}
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .background {
+    grid-template-columns: 100%;
+    grid-template-rows: 8vh 40vh 50vh 50vh 35vh;
+  }
+}

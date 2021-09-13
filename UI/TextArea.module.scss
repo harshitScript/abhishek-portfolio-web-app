@@ -1,0 +1,42 @@
+@import "../globalCSS";
+
+.formGroup {
+  @extend %formGroup;
+}
+
+.formGroup > label {
+  display: block;
+  color: $secondary-color;
+  font-size: 3vh;
+}
+.textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: $ternary-color;
+  color: $main-color;
+  border-bottom: 1vh solid $secondary-color;
+}
+.errorSpan {
+  color: red;
+  font-size: 1.8vh;
+}
+.validText {
+  color: lightgreen;
+  font-size: 1.8vh;
+}
+.loadingCircleSpan {
+  color: $secondary-color;
+}
+.loadingCircleSpan > svg {
+  animation: rotateLoading 300ms ease-out normal infinite;
+}
+
+@keyframes rotateLoading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../globalCSS";
+
+.homePageBody {
+  @include background-image(
+    "https://varttinafans.files.wordpress.com/2012/10/black-floral-texture-pattern-design-wallpaper-background1.jpeg"
+  );
+  height: 100vh;
+  @extend %flexBox;
+}
+
+.headerAndFormHolder {
+  width: 70%;
+}
+
+.footerPlacement {
+  position: absolute;
+  top: 98vh;
+}
+
+@media screen and (max-width: $mobile-max-width) {
+  .headerAndFormHolder {
+    width: 90%;
+  }
+}
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .headerAndFormHolder {
+    width: 90%;
+  }
+}

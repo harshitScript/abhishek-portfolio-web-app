@@ -1,0 +1,64 @@
+@import "../../globalCSS";
+
+.mainIntroDiv {
+  box-sizing: border-box;
+  padding: 1vh;
+}
+
+.imgContainer {
+  box-sizing: border-box;
+  padding: 1vh;
+  display: flex;
+  justify-content: center;
+}
+
+.imgAspects {
+  border-radius: 10vh;
+  transition: all 1s ease-out;
+}
+
+.imgAspects:hover,
+.imgAspects:focus {
+  border-radius: 1vh;
+}
+
+.nameSpan {
+  color: $secondary-color;
+  display: block;
+  text-align: center;
+  font-size: 7vh;
+  font-family: "anurati", "Arial Narrow", Arial, sans-serif;
+}
+
+.nameSpan:focus,
+.nameSpan:hover {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.lilIntroSpan {
+  color: $secondary-color;
+  display: block;
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .nameSpan {
+    font-size: 4vh;
+  }
+  .lilIntroSpan {
+    font-size: 1.5vh;
+  }
+}
+
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .nameSpan {
+    font-size: 6vh;
+  }
+  .lilIntroSpan {
+    font-size: 2vh;
+  }
+}
