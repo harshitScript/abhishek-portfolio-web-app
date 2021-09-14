@@ -9,12 +9,28 @@
   z-index: 100;
   box-sizing: border-box;
   padding: 1vh;
-  background: linear-gradient(to bottom, $ternary-color, $main-color);
+  background: linear-gradient(to bottom, $ternary-color, white);
   box-shadow: 0 0 1vh $secondary-color;
-  box-sizing: border-box;
+  border-radius: 1vh;
+
   //border-bottom: 5vh solid $secondary-color;
 }
 
 .hideModalButton {
   float: right;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .modalBox {
+    width: 90%;
+    left: 5%;
+  }
+}
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .modalBox {
+    width: 70%;
+    left: 15%;
+  }
 }

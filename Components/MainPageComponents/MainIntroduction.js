@@ -13,6 +13,7 @@ const MainIntroduction = () => {
           src={profileImg}
           width="120vh"
           height="120vh"
+          quality='100'
           alt="profile-image"
           className={styles.imgAspects}
         />

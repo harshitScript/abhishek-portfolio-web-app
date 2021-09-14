@@ -10,8 +10,8 @@ const Modal = () => {
   useEffect(() => {
     setContentToDisplay(
       <>
-        {createPortal(<ModalBox />, document.getElementById("overlay-divs"))}
-        {createPortal(<Backdrop />, document.getElementById("backdrop-divs"))}
+        <ModalBox />
+        <Backdrop />
       </>
     );
   }, [setContentToDisplay]);

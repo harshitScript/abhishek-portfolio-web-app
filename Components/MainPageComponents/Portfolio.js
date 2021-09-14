@@ -1,7 +1,6 @@
 import styles from "./Portfolio.module.scss";
-import bioDataIcon from "../../Assets/bio-data-icon.jpeg";
+import introductionIcon from "../../Assets/introduction-icon.jpeg";
 import educationIcon from "../../Assets/education-icon.jpeg";
-import skillsIcon from "../../Assets/skills-icon.jpeg";
 import skillIcon from "../../Assets/skill-icon.jpeg";
 import moreIcon from "../../Assets/more.jpeg";
 import PortfolioIconAndCaption from "./PortfolioIconAndCaption";
@@ -13,9 +12,9 @@ const Portfolio = () => {
       <div className={styles.gridContainer}>
         <div className={styles.firstDiv}>
           <PortfolioIconAndCaption
-            identifier="BIO_DATA"
-            imgSrc={bioDataIcon}
-            caption="BIO-DATA"
+            identifier="INTRODUCTION"
+            imgSrc={introductionIcon}
+            caption="INTRODUCTION"
           />
         </div>
         <div className={styles.secondDiv}>
@@ -40,7 +39,7 @@ const Portfolio = () => {
           />
         </div>
       </div>
-      
+
       <hr />
     </div>
   );

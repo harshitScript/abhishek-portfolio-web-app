@@ -1,0 +1,62 @@
+@import "../globalCSS";
+
+.introductionHeaderSpan {
+  @include mainPageBlockHeadingSpan(4vh);
+  color: $main-color;
+}
+
+.profileImageContainer {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1vh;
+}
+
+.profileImage {
+  border-radius: 2vh;
+}
+
+.nameSpan {
+  display: block;
+  font-size: 4vh;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Voice In My Head", sans-serif;
+}
+
+.detailsContainer {
+  font-size: 2.3vh;
+  font-family: "Titan", sans-serif;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .introductionHeaderSpan {
+    @include mainPageBlockHeadingSpan(3vh);
+    color: $main-color;
+  }
+
+  .nameSpan {
+    font-size: 2.7vh;
+  }
+
+  .detailsContainer {
+    font-size: 1.5vh;
+  }
+}
+
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .introductionHeaderSpan {
+    @include mainPageBlockHeadingSpan(3.5vh);
+    color: $main-color;
+  }
+
+  .nameSpan {
+    font-size: 3vh;
+  }
+
+  .detailsContainer {
+    font-size: 2vh;
+  }
+}

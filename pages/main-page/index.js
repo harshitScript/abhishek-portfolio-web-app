@@ -6,16 +6,21 @@ import { ModalContext } from "../../Context";
 
 const MainPage = (props) => {
   const modalCtx = useContext(ModalContext);
+  const displayModal = modalCtx.displayModal.display;
   return (
     <>
       <Head>
         <title>Harshit Bhawsar inc.</title>
         <link href="http://fonts.cdnfonts.com/css/anurati" rel="stylesheet" />
-        <div id="overlay-divs"></div>
-        <div id="backdrop-divs"></div>
+        <link
+          href="http://fonts.cdnfonts.com/css/voice-in-my-head"
+          rel="stylesheet"
+        />
+        <link href="http://fonts.cdnfonts.com/css/titan" rel="stylesheet" />
       </Head>
       <MainPageContent />
-      {modalCtx.displayModal.display && <Modal />}
+
+      {displayModal && <Modal />}
     </>
   );
 };

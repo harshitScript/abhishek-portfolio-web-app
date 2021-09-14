@@ -1,0 +1,57 @@
+@import "../globalCSS";
+
+.educationAndCertificateHeaderSpan {
+  @include mainPageBlockHeadingSpan(4vh);
+  color: $main-color;
+}
+
+.table {
+  margin: 0 auto;
+}
+
+.table td,
+.table th {
+  box-sizing: border-box;
+  padding: 1vh;
+  font-size: 2vh;
+  text-align: center;
+  border: 1px solid $main-color;
+}
+
+.table > thead:hover {
+  background-color: $ternary-color;
+}
+
+.unOrderedList > li {
+  font-size: 2vh;
+  font-family: "Titan", sans-serif;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .educationAndCertificateHeaderSpan {
+    @include mainPageBlockHeadingSpan(3vh);
+    color: $main-color;
+  }
+  .table td,
+  .table th {
+    font-size: 1.5vh;
+  }
+  .unOrderedList > li {
+    font-size: 1.7vh;
+  }
+}
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .educationAndCertificateHeaderSpan {
+    @include mainPageBlockHeadingSpan(3.5vh);
+    color: $main-color;
+  }
+  .table td,
+  .table th {
+    font-size: 1.5vh;
+  }
+  .unOrderedList > li {
+    font-size: 1.9vh;
+  }
+}
