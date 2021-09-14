@@ -24,9 +24,12 @@ const MainIntroduction = () => {
         &nbsp;BHAWSAR
       </span>
 
-      <hr />
+      <span className={styles.lilIntroSpan}>
+        Coder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learner&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creator
+      </span>
 
-      <span className={styles.lilIntroSpan}>Coder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learner&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creator</span>
+      <br />
+      <hr />
     </div>
   );
 };

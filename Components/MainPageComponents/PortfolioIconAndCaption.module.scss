@@ -1,0 +1,38 @@
+@import "../../globalCSS";
+
+.imageContainerDiv {
+  display: flex;
+  justify-content: center;
+}
+.iconImages {
+  background-color: brown;
+  border-radius: 8vh;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all 500ms ease-out;
+}
+.iconImages:focus,
+.iconImages:hover {
+  transform: rotate(360deg);
+}
+
+.captionSpan {
+  font-size: 2.5vh;
+  display: block;
+  color: $secondary-color;
+  text-align: center;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .captionSpan {
+    font-size: 2vh;
+  }
+}
+
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .captionSpan {
+    font-size: 2.5vh;
+  }
+}

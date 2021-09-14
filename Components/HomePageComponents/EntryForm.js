@@ -24,8 +24,6 @@ const EntryForm = () => {
     if (nameIsValid) {
       //THE URL PATH SHOULD PASSED WHILE USING API ROUTES.
       setLoading(true);
-      setError(false);
-
       axios
         .post("/api/store-visitor-data", {
           visiterName: enteredName,

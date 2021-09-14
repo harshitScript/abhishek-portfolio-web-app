@@ -3,6 +3,48 @@
 .portfolioDiv {
   box-sizing: border-box;
   padding: 1vh;
-  background-color: cornflowerblue;
   grid-column: 1/2;
+}
+
+.portfolioHeaderSpan {
+  @include mainPageBlockHeadingSpan(5vh);
+}
+
+.gridContainer {
+  display: grid;
+  height: 30vh;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25vh;
+  align-content: center;
+}
+
+.firstDiv {
+  box-sizing: border-box;
+  padding: 1vh;
+}
+.secondDiv {
+  box-sizing: border-box;
+  padding: 1vh;
+}
+.thirdDiv {
+  box-sizing: border-box;
+  padding: 1vh;
+}
+.fourthDiv {
+  box-sizing: border-box;
+  padding: 1vh;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .portfolioHeaderSpan {
+    @include mainPageBlockHeadingSpan(4vh);
+  }
+}
+
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .portfolioHeaderSpan {
+    @include mainPageBlockHeadingSpan(5vh);
+  }
 }
