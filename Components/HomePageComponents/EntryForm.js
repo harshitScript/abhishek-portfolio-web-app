@@ -4,11 +4,12 @@ import Input from "../../UI/Input";
 import styles from "./EntryForm.module.scss";
 import { useState } from "react";
 import axios from "axios";
-import { useRouter } from "next/router";
+import { useContext } from "react";
+import { AuthToken } from "../../Context";
 
 const namePattern = /^[a-zA-Z]{3,}(\s[a-zA-Z]{3,})?$/;
 const EntryForm = () => {
-  const router = useRouter();
+  const authTokenCtx = useContext(AuthToken);
   const [loading, setLoading] = useState(false);
   const {
     enteredValue: enteredName,
@@ -29,7 +30,7 @@ const EntryForm = () => {
           visiterName: enteredName,
         })
         .then((responseObj) => {
-          router.replace("/main-page");
+          authTokenCtx.authTokenProvider();
         })
         .catch((error) => {
           setLoading(false);

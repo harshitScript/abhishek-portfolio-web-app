@@ -8,3 +8,8 @@ export const ModalContext = createContext({
   modalDisplayHandler: (identifier) => {},
   modalHideHandler: () => {},
 });
+
+export const AuthToken = createContext({
+  authToken: false,
+  authTokenProvider: () => {},
+});
