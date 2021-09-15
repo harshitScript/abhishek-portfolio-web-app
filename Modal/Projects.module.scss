@@ -1,0 +1,26 @@
+@import "../globalCSS";
+
+.projectsHeaderSpan {
+  @include mainPageBlockHeadingSpan(4vh);
+  color: $main-color;
+}
+
+.projectBlocksContainer {
+  max-height: 35vh;
+  overflow: auto;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .projectsHeaderSpan {
+    @include mainPageBlockHeadingSpan(3vh);
+    color: $main-color;
+  }
+}
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .projectsHeaderSpan {
+    @include mainPageBlockHeadingSpan(3.5vh);
+    color: $main-color;
+  }
+}

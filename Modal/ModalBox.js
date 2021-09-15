@@ -4,6 +4,9 @@ import { ModalContext } from "../Context";
 import { TiCancel } from "react-icons/ti";
 import IntroductionUI from "./IntroductionUI";
 import EducationUI from "./EducationUI";
+import SkillUI from "./SkillUI";
+import Projects from "./Projects";
+import MoreUI from "./MoreUI";
 
 const ModalBox = () => {
   const modalCtx = useContext(ModalContext);
@@ -17,6 +20,15 @@ const ModalBox = () => {
       break;
     case "EDUCATION":
       contentToDisplay = <EducationUI />;
+      break;
+    case "SKILL":
+      contentToDisplay = <SkillUI />;
+      break;
+    case "PROJECTS":
+      contentToDisplay = <Projects />;
+      break;
+    case "MORE":
+      contentToDisplay = <MoreUI />;
       break;
   }
 

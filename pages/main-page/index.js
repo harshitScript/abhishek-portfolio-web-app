@@ -11,6 +11,7 @@ const MainPage = (props) => {
     <>
       <Head>
         <title>Harshit Bhawsar inc.</title>
+        <link rel="icon" href='../../Assets/logo.jpeg' />
         <link href="http://fonts.cdnfonts.com/css/anurati" rel="stylesheet" />
         <link
           href="http://fonts.cdnfonts.com/css/voice-in-my-head"

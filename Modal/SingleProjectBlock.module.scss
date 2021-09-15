@@ -1,0 +1,90 @@
+@import "../globalCSS";
+
+.singleProjectBlock {
+  box-sizing: border-box;
+  padding: 1vh;
+}
+
+.imagesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image1,
+.image2 {
+  border-radius: 1vh;
+}
+
+.titleAndButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleAndButtonContainer > div {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleAndButtonContainer > div > button {
+  width: 100%;
+}
+
+.titleSpan {
+  font-size: 3vh;
+  font-family: "Voice In My Head", sans-serif;
+}
+
+.descriptionSpan {
+  display: block;
+  font-size: 2vh;
+  height: fit-content;
+  font-family: "Titan", Courier, monospace;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .singleProjectBlock {
+    max-height: 38vh;
+    overflow: auto;
+  }
+
+  .imagesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image1 {
+    border-radius: 1vh;
+  }
+
+  .imageContainer2 {
+    display: none;
+  }
+
+  .titleSpan {
+    font-size: 2vh;
+  }
+
+  .descriptionSpan {
+    font-size: 1.7vh;
+  }
+}
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .singleProjectBlock {
+    max-height: 39vh;
+    overflow: auto;
+  }
+
+  .titleSpan {
+    font-size: 2.5vh;
+  }
+
+  .descriptionSpan {
+    font-size: 1.9vh;
+  }
+}

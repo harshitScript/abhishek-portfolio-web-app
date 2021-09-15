@@ -47,7 +47,7 @@ const EducationUI = () => {
 
       <ul className={styles.unOrderedList}>
         <li>
-          {"HTML, CSS, & Bootstheadap - Certification Course for Beginners"}
+          {"HTML, CSS, & Bootstrap - Certification Course for Beginners"}
         </li>
         <li>{"JavaScript - Basics to Advanced [step by step (2021)]"}</li>
         <li>

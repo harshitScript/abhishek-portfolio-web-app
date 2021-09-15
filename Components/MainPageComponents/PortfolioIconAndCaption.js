@@ -11,7 +11,7 @@ const PortfolioIconAndCaption = ({ identifier, imgSrc, caption }) => {
         <Image
           src={imgSrc}
           className={styles.iconImages}
-          alt="bio-data"
+          alt="image"
           width="100%"
           height="100%"
           loading="lazy"

@@ -3,6 +3,7 @@ import introductionIcon from "../../Assets/introduction-icon.jpeg";
 import educationIcon from "../../Assets/education-icon.jpeg";
 import skillIcon from "../../Assets/skill-icon.jpeg";
 import moreIcon from "../../Assets/more.jpeg";
+import projectsIcon from '../../Assets/projects-icon.jpeg';
 import PortfolioIconAndCaption from "./PortfolioIconAndCaption";
 
 const Portfolio = () => {
@@ -14,7 +15,7 @@ const Portfolio = () => {
           <PortfolioIconAndCaption
             identifier="INTRODUCTION"
             imgSrc={introductionIcon}
-            caption="INTRODUCTION"
+            caption="INTRO"
           />
         </div>
         <div className={styles.secondDiv}>
@@ -26,12 +27,19 @@ const Portfolio = () => {
         </div>
         <div className={styles.thirdDiv}>
           <PortfolioIconAndCaption
-            identifier="SKILLS"
+            identifier="SKILL"
             imgSrc={skillIcon}
             caption="SKILLS"
           />
         </div>
         <div className={styles.fourthDiv}>
+          <PortfolioIconAndCaption
+            identifier="PROJECTS"
+            imgSrc={projectsIcon}
+            caption="PROJECTS"
+          />
+        </div>
+        <div className={styles.fifthDiv}>
           <PortfolioIconAndCaption
             identifier="MORE"
             imgSrc={moreIcon}

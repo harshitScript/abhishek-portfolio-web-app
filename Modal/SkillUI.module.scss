@@ -1,0 +1,85 @@
+@import "../globalCSS";
+
+.skillHeaderSpan {
+  @include mainPageBlockHeadingSpan(4vh);
+  color: $main-color;
+}
+
+.mainSkillsContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto;
+}
+
+.singleSkillspan {
+  font-size: 2.2vh;
+  text-align: center;
+  font-family: "Voice In My Head", sans-serif;
+  transition: all 500ms ease-out;
+}
+
+.singleSkillspan:focus,
+.singleSkillspan:hover {
+  font-size: 3vh;
+}
+
+.subSkillsSpan {
+  font-size: 2vh;
+  font-family: "Titan", sans-serif;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .skillHeaderSpan {
+    @include mainPageBlockHeadingSpan(3vh);
+    color: $main-color;
+  }
+
+  .mainSkillsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .singleSkillspan {
+    font-size: 1.8vh;
+    box-sizing: border-box;
+    padding: 1vh;
+  }
+
+  .singleSkillspan:focus,
+  .singleSkillspan:hover {
+    font-size: 2.5vh;
+  }
+
+  .subSkillsSpan {
+    font-size: 1.7vh;
+  }
+}
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .skillHeaderSpan {
+    @include mainPageBlockHeadingSpan(3.5vh);
+    color: $main-color;
+  }
+
+  .mainSkillsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .singleSkillspan {
+    font-size: 2vh;
+    box-sizing: border-box;
+    padding: 1vh;
+  }
+
+  .singleSkillspan:focus,
+  .singleSkillspan:hover {
+    font-size: 3vh;
+  }
+  .subSkillsSpan {
+    font-size: 1.9vh;
+  }
+}

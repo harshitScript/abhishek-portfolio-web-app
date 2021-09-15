@@ -1,3 +1,5 @@
+@import "../globalCSS";
+
 html,
 body {
   padding: 0;
@@ -7,6 +9,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   z-index: 1;
+}
+
+::selection {
+  background-color: $ternary-color;
+  color: $main-color;
 }
 
 a {

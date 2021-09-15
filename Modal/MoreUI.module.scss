@@ -1,0 +1,46 @@
+@import "../globalCSS";
+
+.moreHeaderSpan {
+  @include mainPageBlockHeadingSpan(4vh);
+  color: $main-color;
+}
+
+.moreDetailsContainer {
+  box-sizing: border-box;
+  padding: 1vh;
+}
+
+.coAndRefHeaderSpan {
+  font-size: 3vh;
+  display: block;
+  font-family: "Voice In My Head", sans-serif;
+}
+
+.subSpan {
+  font-size: 2vh;
+  display: block;
+  font-family: "Titan", sans-serif;
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .moreHeaderSpan {
+    @include mainPageBlockHeadingSpan(3vh);
+    color: $main-color;
+  }
+
+  .coAndRefHeaderSpan {
+    font-size: 2vh;
+    display: block;
+    font-family: "Voice In My Head", sans-serif;
+  }
+
+  .subSpan {
+    font-size: 1.7vh;
+    display: block;
+    font-family: "Titan", sans-serif;
+  }
+}
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+}

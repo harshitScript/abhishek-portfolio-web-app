@@ -13,7 +13,8 @@
   min-width: 20%;
 }
 
-.formGroup > button:hover{
-    background-color: $secondary-color;
+.formGroup > button:hover,
+.formGroup > button:focus {
+  background-color: $secondary-color;
+  cursor: pointer;
 }
-
