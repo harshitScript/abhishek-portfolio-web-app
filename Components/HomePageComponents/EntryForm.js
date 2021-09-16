@@ -1,5 +1,5 @@
 import useInputValidation from "../../Hooks/use-input-validation";
-//import Button from "../../UI/Button";
+import Button from "../../UI/Button";
 import Input from "../../UI/Input";
 import styles from "./EntryForm.module.scss";
 import { useState } from "react";
@@ -51,7 +51,7 @@ const EntryForm = () => {
         validText="hit enter when done."
         loadingCircleDisplay={loading}
       />
-      {/*<Button>Enter</Button>*/}
+      <Button className={styles.displayButton}>Enter</Button>
     </form>
   );
 };

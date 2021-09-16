@@ -6,6 +6,10 @@
   animation: formEnter 1000ms ease-out 1000ms normal both;
 }
 
+.displayButton {
+  display: none;
+}
+
 @keyframes formEnter {
   0% {
     opacity: 0;
@@ -18,5 +22,15 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+// MOBILE AND TABLET VIEW
+@media screen and (max-width: $tablet-max-width) {
+  .displayButton {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
