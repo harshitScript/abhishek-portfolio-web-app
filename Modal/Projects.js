@@ -32,7 +32,7 @@ const projectData = [
     title: "MY PORTFOLIO WEBSITE",
     description:
       "The website you are currently visiting is a nextjs based web application created by me for portfolio purposes.",
-    navigationLink: "https://motor-cycle-app-7aff6.web.app/home-page",
+    navigationLink: "https://harshit-bhawsar-portfolio-website.vercel.app/",
     imgSrc1: portfolioImg1,
     imgSrc2: portfolioImg2,
   },
