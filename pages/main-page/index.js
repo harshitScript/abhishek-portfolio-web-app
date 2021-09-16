@@ -15,21 +15,12 @@ const MainPage = (props) => {
   // NAVIGATION BRIDGE
   useEffect(() => {
     if (authTokenCtx.authToken === false) {
-      router.replace("/not-found");
+      router.replace("/");
     }
   }, [authTokenCtx.authToken, router]);
 
   return (
     <>
-      <Head>
-        <title>Harshit Bhawsar inc.</title>
-        <link href="http://fonts.cdnfonts.com/css/anurati" rel="stylesheet" />
-        <link
-          href="http://fonts.cdnfonts.com/css/voice-in-my-head"
-          rel="stylesheet"
-        />
-        <link href="http://fonts.cdnfonts.com/css/titan" rel="stylesheet" />
-      </Head>
       <MainPageContent />
 
       {displayModal && <Modal />}

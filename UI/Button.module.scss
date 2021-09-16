@@ -18,3 +18,19 @@
   background-color: $secondary-color;
   cursor: pointer;
 }
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .formGroup > button {
+    height: 4vh;
+    font-size: 1.5vh;
+  }
+}
+
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .formGroup > button {
+    height: 4vh;
+    font-size: 2vh;
+  }
+}

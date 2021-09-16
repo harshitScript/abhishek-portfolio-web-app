@@ -17,11 +17,14 @@
   top: 98vh;
 }
 
+// MOBILE VIEW
 @media screen and (max-width: $mobile-max-width) {
   .headerAndFormHolder {
-    width: 90%;
+    width: 100%;
   }
 }
+
+//TABLET VIEW
 @media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
   .headerAndFormHolder {
     width: 90%;

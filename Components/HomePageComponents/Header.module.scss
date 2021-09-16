@@ -9,6 +9,7 @@
   text-decoration: underline;
   box-sizing: border-box;
   padding: 1vh;
+  animation: headerEnter 1000ms ease-out normal forwards;
 }
 
 .header:hover {
@@ -16,15 +17,30 @@
   font-weight: bolder;
 }
 
+@keyframes headerEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  90% {
+    opacity: 0.5;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 // MOBILE VIEW
 @media screen and (max-width: $mobile-max-width) {
   .header {
-    font-size: 5vh;
+    font-size: 3.5vh;
   }
 }
 // TABLET VIEW
 @media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
   .header {
-    font-size: 7vh;
+    font-size: 5vh;
   }
 }

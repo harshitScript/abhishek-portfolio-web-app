@@ -23,7 +23,7 @@
   font-size: 1.8vh;
 }
 .validText {
-  color: lightgreen;
+  color: $ternary-color;
   font-size: 1.8vh;
 }
 .loadingCircleSpan {
@@ -39,5 +39,39 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+// MOBILE VIEW
+@media screen and (max-width: $mobile-max-width) {
+  .formGroup > input {
+    height: 4vh;
+    border-bottom: 0.8vh solid $secondary-color;
+    font-size: 2vh;
+  }
+  .errorSpan {
+    font-size: 0.9vh;
+    font-weight: bold;
+  }
+  .validText {
+    font-size: 0.9vh;
+    font-weight: bold;
+  }
+}
+
+// TABLET VIEW
+@media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
+  .formGroup > input {
+    height: 4vh;
+    border-bottom: 0.8vh solid $secondary-color;
+    font-size: 2vh;
+  }
+  .errorSpan {
+    font-size: 1.5vh;
+    font-weight: bold;
+  }
+  .validText {
+    font-size: 1.5vh;
+    font-weight: bold;
   }
 }

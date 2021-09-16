@@ -39,12 +39,14 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: auto auto;
+    overflow-x: (auto);
   }
 
   .singleSkillspan {
-    font-size: 1.8vh;
+    font-size: 2vh;
     box-sizing: border-box;
     padding: 1vh;
+    cursor: pointer;
   }
 
   .singleSkillspan:focus,
@@ -53,7 +55,7 @@
   }
 
   .subSkillsSpan {
-    font-size: 1.7vh;
+    font-size: 1.5vh;
   }
 }
 // TABLET VIEW

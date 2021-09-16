@@ -34,12 +34,12 @@ const EntryForm = () => {
         })
         .catch((error) => {
           setLoading(false);
-          alert("Unknown error occured ! try again.");
+          alert(error.message);
         });
     }
   };
   return (
-    <form onSubmit={submitHandler} className={styles.formWidth}>
+    <form onSubmit={submitHandler} className={styles.formWidthAndAnimation}>
       <Input
         type="text"
         placeholder="Enter your name"
@@ -48,7 +48,7 @@ const EntryForm = () => {
         onBlur={nameWasTouchedHandler}
         errorMsg="name must contain 3+ characters and no extreme spaces"
         displayValidText={nameIsValid}
-        validText="All set ! hit enter."
+        validText="hit enter when done."
         loadingCircleDisplay={loading}
       />
       {/*<Button>Enter</Button>*/}

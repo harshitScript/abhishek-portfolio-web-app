@@ -24,14 +24,14 @@
 // MOBILE VIEW
 @media screen and (max-width: $mobile-max-width) {
   .modalBox {
-    width: 90%;
-    left: 5%;
+    width: 95%;
+    left: 2.5%;
   }
 }
 // TABLET VIEW
 @media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
   .modalBox {
-    width: 70%;
-    left: 15%;
+    width: 80%;
+    left: 10%;
   }
 }

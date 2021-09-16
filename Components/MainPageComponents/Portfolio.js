@@ -3,7 +3,7 @@ import introductionIcon from "../../Assets/introduction-icon.jpeg";
 import educationIcon from "../../Assets/education-icon.jpeg";
 import skillIcon from "../../Assets/skill-icon.jpeg";
 import moreIcon from "../../Assets/more.jpeg";
-import projectsIcon from '../../Assets/projects-icon.jpeg';
+import projectsIcon from "../../Assets/projects-icon.jpeg";
 import PortfolioIconAndCaption from "./PortfolioIconAndCaption";
 
 const Portfolio = () => {
@@ -47,8 +47,6 @@ const Portfolio = () => {
           />
         </div>
       </div>
-
-      <hr />
     </div>
   );
 };

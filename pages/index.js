@@ -5,8 +5,7 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Harshit Bhawsar inc.</title>
-        <link href="http://fonts.cdnfonts.com/css/blanka" rel="stylesheet" />       
+        <link href="http://fonts.cdnfonts.com/css/blanka" rel="stylesheet" />
       </Head>
       <HomePageBody />
     </>

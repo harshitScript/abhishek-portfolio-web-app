@@ -3,6 +3,10 @@
 .mainIntroDiv {
   box-sizing: border-box;
   padding: 1vh;
+  border-bottom: 2px double $ternary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .imgContainer {
@@ -28,6 +32,7 @@
   text-align: center;
   font-size: 7vh;
   font-family: "anurati", "Arial Narrow", Arial, sans-serif;
+  animation: headerEnter 1s ease-out normal forwards;
 }
 
 .nameSpan:focus,
@@ -43,6 +48,21 @@
   text-align: center;
 }
 
+@keyframes headerEnter {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  90% {
+    opacity: 0.5;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 // MOBILE VIEW
 @media screen and (max-width: $mobile-max-width) {
   .nameSpan {
@@ -56,7 +76,7 @@
 // TABLET VIEW
 @media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
   .nameSpan {
-    font-size: 6vh;
+    font-size: 5vh;
   }
   .lilIntroSpan {
     font-size: 2vh;

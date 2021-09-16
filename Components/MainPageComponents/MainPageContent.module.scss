@@ -14,13 +14,13 @@
 @media screen and (max-width: 500px) {
   .background {
     grid-template-columns: 100%;
-    grid-template-rows: 8vh 35vh 50vh 50vh 30vh;
+    grid-template-rows: 8vh 35vh 55vh 40vh 30vh;
   }
 }
 // TABLET VIEW
 @media screen and (min-width: $mobile-max-width) and (max-width: $tablet-max-width) {
   .background {
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 40vh 50vh 50vh 35vh;
+    grid-template-rows: 10vh 40vh 40vh 50vh 35vh;
   }
 }

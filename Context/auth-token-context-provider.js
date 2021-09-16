@@ -7,9 +7,10 @@ const AuthTokenContextProvider = (props) => {
   const router = useRouter();
   const authTokenProvider = () => {
     setAuthToken(true);
-    console.log('hahahah')
+    console.log("hahahah");
     router.replace("/main-page");
   };
+
   return (
     <AuthToken.Provider
       value={{

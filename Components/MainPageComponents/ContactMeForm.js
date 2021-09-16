@@ -100,7 +100,7 @@ const ContactMeForm = () => {
             onBlur={nameWasTouchedHandler}
             displayError={displayNameError}
             displayValidText={nameIsValid}
-            validText="All set !"
+            validText="go on !"
             errorMsg="name must contain 3+ characters and no extreme spaces"
             id="VSTR_NAME"
             placeholder="enter your name"
@@ -112,7 +112,7 @@ const ContactMeForm = () => {
             onBlur={contactWasTouchedHandler}
             displayError={displayContactError}
             displayValidText={contactIsValid}
-            validText="All set !"
+            validText="go on !"
             errorMsg="Not a valid contact(check extreme spaces)"
             id="VSTR_CONTACT"
             placeholder="enter your contact"
@@ -124,7 +124,7 @@ const ContactMeForm = () => {
             onBlur={emailWasTouchedHandler}
             displayError={displayEmailError}
             displayValidText={emailIsValid}
-            validText="All set !"
+            validText="go on !"
             errorMsg="not a valid email(check extreme spaces)"
             id="VSTR_EMAIL"
             placeholder="enter your email"
@@ -136,7 +136,7 @@ const ContactMeForm = () => {
             onBlur={commentWasTouchedHandler}
             displayError={displayCommentError}
             displayValidText={commentIsValid}
-            validText="All set !"
+            validText="go on !"
             errorMsg="not a valid comment(10+ characters)"
             id="VSTR_EMAIL"
             placeholder="enter your comment"
@@ -148,7 +148,6 @@ const ContactMeForm = () => {
       {displayFormResponseObj.displayFormResponse && (
         <ContactMeFormResponse requestId={displayFormResponseObj.responseId} />
       )}
-      <hr />
     </div>
   );
 };
