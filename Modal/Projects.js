@@ -2,8 +2,8 @@ import styles from "./Projects.module.scss";
 import SingleProjectBlock from "./SingleProjectBlock";
 import ifvsImg1 from "../Assets/ifvsImg1.png";
 import ifvsImg2 from "../Assets/ifvsImg2.png";
-import motoAppImg1 from "../Assets/motoAppImg1.png";
-import motoAppImg2 from "../Assets/motoAppImg2.png";
+import motoAppImg1 from "../Assets/MotoAppImg1.png";
+import motoAppImg2 from "../Assets/MotoAppImg2.png";
 import portfolioImg1 from "../Assets/protfolioImg1.png";
 import portfolioImg2 from "../Assets/protfolioImg2.png";
 
