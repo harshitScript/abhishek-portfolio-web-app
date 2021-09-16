@@ -1,5 +1,5 @@
 import { MongoClient } from "mongodb";
-const postRequestHandler = (req, res) => {
+const postRequestHandler = async (req, res) => {
   if (req.method === "POST") {
     try {
       const client = await MongoClient.connect(
