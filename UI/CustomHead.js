@@ -5,7 +5,7 @@ const CustomHead = () => {
     <Head>
       <title>Harshit Bhawsar Inc.</title>
       <link rel="icon" href="logo.jpeg" />
-      <link href="http://fonts.cdnfonts.com/css/blanka" rel="stylesheet" />
+      {/*<link href="http://fonts.cdnfonts.com/css/blanka" rel="stylesheet" />*/}
       <link href="http://fonts.cdnfonts.com/css/anurati" rel="stylesheet" />
       <link
         href="http://fonts.cdnfonts.com/css/voice-in-my-head"
