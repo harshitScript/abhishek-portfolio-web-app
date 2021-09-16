@@ -51,7 +51,7 @@ const EntryForm = () => {
         validText="hit enter when done."
         loadingCircleDisplay={loading}
       />
-      <Button className={styles.displayButton}>Enter</Button>
+      {nameIsValid && <Button className={styles.displayButton}>Enter</Button>}
     </form>
   );
 };
