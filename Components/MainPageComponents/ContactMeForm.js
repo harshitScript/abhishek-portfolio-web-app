@@ -17,7 +17,7 @@ const ContactMeForm = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [displayFormResponseObj, setDisplayFormResponseObj] = useState({
-    displayFormResponse: true,
+    displayFormResponse: false,
     responseId: "",
   });
   const {
