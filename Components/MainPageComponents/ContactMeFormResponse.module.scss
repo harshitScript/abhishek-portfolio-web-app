@@ -3,7 +3,7 @@
 .contactRequestResponseDiv {
   box-sizing: border-box;
   padding: 1vh;
-  height: 41vh;
+  height: 25vh;
   @extend %flexBox;
 }
 
@@ -58,5 +58,12 @@
 
   .responseTimeSpan {
     font-size: 1.7vh;
+  }
+}
+
+// LANDSCAPE
+@media screen and (orientation: landscape) {
+  .contactRequestResponseDiv {
+    height: 45vh;
   }
 }

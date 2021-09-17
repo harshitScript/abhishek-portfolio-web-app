@@ -16,7 +16,7 @@
 .contactMeHeader {
   @include mainPageBlockHeadingSpan(5vh);
   box-sizing: border-box;
-  padding-bottom:1vh ;
+  padding-bottom: 1vh;
 }
 
 .loadingCircleSpan {
@@ -51,5 +51,19 @@
   }
   .contactMeHeader {
     @include mainPageBlockHeadingSpan(5vh);
+  }
+}
+
+//LANDSCPE
+@media screen and (orientation: landscape) {
+  .contactMeHeader {
+    @include mainPageBlockHeadingSpan(6vh);
+  }
+  .contactMeFormDiv > form {
+    box-sizing: border-box;
+    padding: 1vh;
+    height: 60vh;
+    width: 50%;
+    margin: 0 auto;
   }
 }

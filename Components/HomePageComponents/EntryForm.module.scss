@@ -50,3 +50,12 @@
     display: block;
   }
 }
+
+// LANDSCAPE
+@media screen and (orientation: landscape) {
+  .formWidthAndAnimation {
+    width: 50%;
+    margin: 0 auto;
+    animation: formEnter 1000ms ease-out 1000ms normal both;
+  }
+}

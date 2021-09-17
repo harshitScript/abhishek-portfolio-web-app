@@ -69,3 +69,15 @@
     font-size: 2vh;
   }
 }
+
+// LANDSCAPE
+@media screen and (orientation: landscape) {
+  .errorSpan {
+    font-size: 1.8vh;
+    font-weight: bold;
+  }
+  .validText {
+    font-size: 1.8vh;
+    font-weight: bold;
+  }
+}

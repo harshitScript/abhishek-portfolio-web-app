@@ -75,3 +75,19 @@
     font-weight: bold;
   }
 }
+
+// LANDSCAPE
+@media screen and (orientation: landscape) {
+  .formGroup > input {
+    height: 5vh;
+    border-bottom: 1vh solid $secondary-color;
+  }
+  .errorSpan {
+    font-size: 1.8vh;
+    font-weight: bold;
+  }
+  .validText {
+    font-size: 1.8vh;
+    font-weight: bold;
+  }
+}

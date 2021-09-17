@@ -57,3 +57,18 @@
     grid-template-rows: 25vh;
   }
 }
+
+// LANDSCAPE
+@media screen and (orientation: landscape) {
+  .portfolioHeaderSpan {
+    @include mainPageBlockHeadingSpan(6vh);
+  }
+  .gridContainer {
+    height: 35vh;
+  }
+  .gridContainer {
+    height: 80vh;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 30vh;
+  }
+}

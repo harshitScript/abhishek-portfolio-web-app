@@ -44,3 +44,10 @@
     font-size: 5vh;
   }
 }
+
+// LANDSCAPE
+@media screen and (orientation: landscape) {
+  .header {
+    font-size: 8vh;
+  }
+}

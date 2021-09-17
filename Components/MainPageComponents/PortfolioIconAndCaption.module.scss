@@ -36,3 +36,10 @@
     font-size: 2.5vh;
   }
 }
+
+// LANDSCAPE
+@media screen and (orientation: landscape) {
+  .captionSpan {
+    font-size: 3vh;
+  }
+}

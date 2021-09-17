@@ -82,3 +82,13 @@
     font-size: 2vh;
   }
 }
+
+//LANDSCAPE
+@media screen and (orientation: landscape) {
+  .nameSpan {
+    font-size: 8vh;
+  }
+  .lilIntroSpan {
+    font-size: 3vh;
+  }
+}
