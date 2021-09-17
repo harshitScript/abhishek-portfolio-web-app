@@ -42,7 +42,7 @@ const EntryForm = () => {
     <form onSubmit={submitHandler} className={styles.formWidthAndAnimation}>
       <Input
         type="text"
-        placeholder="Enter your name"
+        placeholder="Enter full name"
         displayError={showNameError}
         onChange={nameChangeHandler}
         onBlur={nameWasTouchedHandler}
