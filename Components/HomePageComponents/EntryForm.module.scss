@@ -1,7 +1,7 @@
 @import "../../globalCSS";
 
 .formWidthAndAnimation {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   animation: formEnter 1000ms ease-out 1000ms normal both;
 }
@@ -52,7 +52,7 @@
 }
 
 // LANDSCAPE
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 1024px)  {
   .formWidthAndAnimation {
     width: 50%;
     margin: 0 auto;

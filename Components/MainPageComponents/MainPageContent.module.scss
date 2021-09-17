@@ -26,7 +26,7 @@
 }
 
 // LANDSCAPE
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 1024px) {
   .background {
     grid-template-columns: 100%;
     grid-template-rows: 10vh 90vh 100vh 70vh 35vh;

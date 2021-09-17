@@ -52,7 +52,7 @@
     font-weight: bold;
   }
   .textarea {
-    font-size: 1.5vh;
+    font-size: 2vh;
   }
 }
 // TABLET VIEW
@@ -71,7 +71,7 @@
 }
 
 // LANDSCAPE
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 1024px) {
   .errorSpan {
     font-size: 1.8vh;
     font-weight: bold;

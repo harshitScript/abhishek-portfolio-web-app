@@ -84,7 +84,7 @@
 }
 
 //LANDSCAPE
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 1024px) {
   .nameSpan {
     font-size: 8vh;
   }
