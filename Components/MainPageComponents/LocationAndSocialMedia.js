@@ -18,18 +18,23 @@ const LocationAndSocialMedia = () => {
   const gmailClickHandler = () => {
     window.open("mailto:www.harshitbhawsar777@gmail.com");
   };
+  const mapOpenHandler = () => {
+    window.open("https://goo.gl/maps/LcpBKaHKVVecAj8p6");
+  };
 
   return (
     <div className={styles.socialMediaDiv}>
       {/* LOCATION */}
       <span className={styles.locationAndSocialMediaHeader}>Location</span>
-      <span className={styles.locationSpan}>
-        20,Labour Colony
-        <br />
-        Mandsaur(M.P.)
-        <br />
-        India
-      </span>
+      <abbr title="click to get location">
+        <span onClick={mapOpenHandler} className={styles.locationSpan}>
+          20,Labour Colony
+          <br />
+          Mandsaur(M.P.)
+          <br />
+          India
+        </span>
+      </abbr>
       <hr />
 
       {/* SOCIAL MEDIA */}
