@@ -17,18 +17,17 @@ const IntroductionUI = () => {
           height="120"
         />
       </div>
-      <span className={styles.nameSpan}>Harshit Bhawsar</span>
+      <span className={styles.nameSpan}>Abhishek Pachchisiya</span>
       <hr />
       <div className={styles.detailsContainer}>
-        • Date-of-birth : 06-06-2000.
+        • Date-of-birth : 22-07-1999.
         <br />
-        • Email : www.harshitbhawsar777@gmail.com.
+        • Email : Pachchisiyaabhishek@gmail.com
         <br />
         • Nationality : Indian.
         <br />
         • Languages Known : Hindi,English.
-        <br />• Permanent Address : 20-Nai Aabadi, Mandsaur-458001 , Madhya
-        Pradesh.
+        <br />• Permanent Address : Ganesh nagar ,  khandva naka , indore (m. p).
       </div>
     </>
   );

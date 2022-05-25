@@ -3,7 +3,7 @@ import Head from "next/head";
 const CustomHead = () => {
   return (
     <Head>
-      <title>Harshit Bhawsar Inc.</title>
+      <title>Abhishek Pachchisiya Inc.</title>
       <link rel="icon" href="logo.jpeg" />
       <link href="http://fonts.cdnfonts.com/css/blanka" rel="stylesheet" />
       <link href="http://fonts.cdnfonts.com/css/anurati" rel="stylesheet" />

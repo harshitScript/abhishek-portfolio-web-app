@@ -1,7 +1,6 @@
 import styles from "./Navigation.module.scss";
 import Image from "next/image";
 import logoImage from "../Assets/logo.jpeg";
-import Head from "next/head";
 
 const Navigation = () => {
   return (
@@ -15,7 +14,7 @@ const Navigation = () => {
             width="40%"
             height="40%"
           />
-          <span className={styles.headerSpan}>Harshit Bhawsar</span>
+          <span className={styles.headerSpan}>Abhishek Pachchisiya</span>
         </div>
       </div>
     </>

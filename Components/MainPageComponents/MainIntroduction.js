@@ -21,9 +21,9 @@ const MainIntroduction = () => {
         </div>
 
         <span className={styles.nameSpan}>
-          HARSHIT&nbsp;
+        Abhishek&nbsp;
           <FaLaptopCode />
-          &nbsp;BHAWSAR
+          &nbsp;Pachchisiya
         </span>
 
         <span className={styles.lilIntroSpan}>

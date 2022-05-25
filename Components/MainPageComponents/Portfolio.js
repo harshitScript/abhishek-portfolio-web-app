@@ -25,20 +25,20 @@ const Portfolio = () => {
             caption="EDUCATION"
           />
         </div>
-        <div className={styles.thirdDiv}>
+        {/* <div className={styles.thirdDiv}>
           <PortfolioIconAndCaption
             identifier="SKILL"
             imgSrc={skillIcon}
             caption="SKILLS"
           />
-        </div>
-        <div className={styles.fourthDiv}>
+        </div> */}
+        {/* <div className={styles.fourthDiv}>
           <PortfolioIconAndCaption
             identifier="PROJECTS"
             imgSrc={projectsIcon}
             caption="PROJECTS"
           />
-        </div>
+        </div> */}
         <div className={styles.fifthDiv}>
           <PortfolioIconAndCaption
             identifier="MORE"

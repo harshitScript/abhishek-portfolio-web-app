@@ -19,30 +19,30 @@ const EducationUI = () => {
             <th>Percentage.</th>
           </thead>
           <thead>
-            <td>BCA</td>
+            <td>BSC</td>
             <td>Govt. Holkar Science College, Indore, M.P</td>
             <td>Devi Ahilya Vishwavidyalaya, Indore, M.P</td>
-            <td>2021</td>
-            <td>79%</td>
+            <td>2020</td>
+            <td>69%</td>
           </thead>
           <thead>
             <td>HSC</td>
-            <td>Subhash English School, Mandsaur, M.P</td>
+            <td>Govt Gandhi school</td>
             <td>MP Board</td>
-            <td>2018</td>
-            <td>91%</td>
+            <td>2017</td>
+            <td>85%</td>
           </thead>
           <thead>
             <td>Matriculation</td>
-            <td>Subhash English School, Mandsaur, M.P</td>
+            <td>Gaytri chitransh school</td>
             <td>MP Board</td>
             <td>2016</td>
-            <td>90%</td>
+            <td>86%</td>
           </thead>
         </table>
       </div>
 
-      <span className={styles.educationAndCertificateHeaderSpan}>
+      {/* <span className={styles.educationAndCertificateHeaderSpan}>
         CERTIFICATION COURSES
       </span>
       <hr />
@@ -53,7 +53,7 @@ const EducationUI = () => {
         <li>
           {"React - The Complete Guide (incl Hooks, React Router, Redux)"}
         </li>
-      </ul>
+      </ul> */}
     </>
   );
 };

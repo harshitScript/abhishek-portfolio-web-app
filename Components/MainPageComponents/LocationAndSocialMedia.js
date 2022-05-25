@@ -19,7 +19,7 @@ const LocationAndSocialMedia = () => {
     window.open("mailto:www.harshitbhawsar777@gmail.com");
   };
   const mapOpenHandler = () => {
-    window.open("https://goo.gl/maps/LcpBKaHKVVecAj8p6");
+    window.open("https://goo.gl/maps/vfmezhVdHRTdVgrr9");
   };
 
   return (
@@ -28,24 +28,22 @@ const LocationAndSocialMedia = () => {
       <span className={styles.locationAndSocialMediaHeader}>Location</span>
       <abbr title="click to get location">
         <span onClick={mapOpenHandler} className={styles.locationSpan}>
-          20,Labour Colony
+          khandva naka
           <br />
-          Mandsaur(M.P.)
-          <br />
-          India
+          Indore (m. p)
         </span>
       </abbr>
       <hr />
 
       {/* SOCIAL MEDIA */}
-      <span className={styles.locationAndSocialMediaHeader}>Social media</span>
+      {/* <span className={styles.locationAndSocialMediaHeader}>Social media</span>
       <span className={styles.socialMediaSpan}>
         <FaWhatsapp onClick={whatsappClickHandler} />
         <FaInstagram onClick={instagramClickHandler} />
         <FaLinkedin onClick={linkedInClickHandler} />
         <FaGithub onClick={githubClickHandler} />
         <SiGmail onClick={gmailClickHandler} />
-      </span>
+      </span> */}
     </div>
   );
 };
